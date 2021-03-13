@@ -29,6 +29,12 @@
   width: 300px;
 }
 
+@media (max-width: 450px) {
+  .form-control {
+    width: 250px;
+  }
+}
+
 .form-control input {
   background-color: transparent;
   border: 0;
