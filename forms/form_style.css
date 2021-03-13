@@ -1,0 +1,300 @@
+/* ------ GENERAL ------ */
+:root {
+  --font-label-size: 16px;
+  --placeholder-color: rgba(0, 0, 0, 0.309);
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.container a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* ------ Form control ------ */
+
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  display: block;
+  width: 100%;
+  line-height: 2;
+  color: #000;
+  padding-left: 2px;
+}
+
+.form-control p {
+  font-size: var(--font-label-size);
+  line-height: 2;
+  color: var(--primary-color);
+  padding-left: 2px;
+}
+
+.form-control input:focus,
+.form-control input:valid,
+.form-control input:not(:placeholder-shown) {
+  outline: 0;
+}
+
+/* ------ Simple form control with single letter floating effect ------ */
+
+.form-control_simple-floating input:focus {
+  border-color: var(--primary-color);
+}
+
+.form-control_simple-floating label {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.form-control_simple-floating label span {
+  display: inline-block;
+  font-size: var(--font-label-size);
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  cursor: text;
+  color: var(--placeholder-color);
+}
+
+.form-control_simple-floating input:focus + label span,
+.form-control_simple-floating input:valid + label span,
+.form-control_simple-floating input:not(:placeholder-shown) + label span {
+  color: var(--primary-color);
+  transform: translateY(-30px);
+  line-height: 1;
+}
+
+/* ------ Border styles for form controls ------ */
+
+.form-control_border-down input {
+  border-bottom: 1px var(--placeholder-color) solid;
+}
+
+.form-control_border-all input {
+  border: 1px var(--placeholder-color) solid;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.form-control_border-all label {
+  padding-left: 3px;
+  padding-top: 5px;
+}
+
+/* ------ Switch ------ */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+  border-radius: 34px;
+  margin: auto 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.309);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--primary-color);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--primary-color);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* ------ Input with button ------ */
+
+.form-control_input-with-button input {
+  width: 80%;
+  height: 38px;
+  padding: 10px 5px;
+  float: left;
+  border-radius: 5px 0 0 5px;
+}
+
+.form-control_input-with-button button {
+  overflow: visible;
+  position: relative;
+  float: right;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 38px;
+  width: 20%;
+  color: #fff;
+  background: var(--primary-color);
+  border-radius: 0 5px 5px 0;
+}
+
+.form-control_input-with-button button:hover {
+  background: var(--primary-color);
+}
+
+.form-control_input-with-button button:active,
+.form-control_input-with-button button:focus {
+  background: var(--primary-color);
+  outline: 0;
+}
+
+.form-control_input-with-button button:before {
+  /* left arrow */
+  content: "";
+  position: absolute;
+  border-width: 8px 8px 8px 0;
+  border-style: solid solid solid none;
+  border-color: transparent var(--primary-color) transparent;
+  top: 12px;
+  left: -6px;
+}
+
+.form-control_input-with-button button:hover:before {
+  border-right-color: var(--primary-color);
+}
+
+.form-control_input-with-button button:focus:before,
+.form-control_input-with-button button:active:before {
+  border-right-color: var(--primary-color);
+}
+
+.form-control_input-with-button button::-moz-focus-inner {
+  /* remove extra button spacing for Mozilla Firefox */
+  border: 0;
+  padding: 0;
+}
+
+/* ------ Input number ------ */
+
+.quantity {
+  position: relative;
+  margin: auto 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  float: left;
+  padding: 0;
+  margin: 0;
+  height: 38px;
+  width: 100px;
+  padding-left: 5px;
+  font-size: var(--font-label-size);
+}
+
+.quantity input:focus {
+  outline: 0;
+  border-color: var(--primary-color);
+}
+
+.quantity-nav {
+  float: left;
+  position: relative;
+  height: 38px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  border-left: 1px solid var(--primary-color);
+  width: 21px;
+  text-align: center;
+  color: #fff;
+  padding: 0;
+  background: var(--primary-color);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.quantity-button:active {
+  background: var(--primary-color);
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  height: 50%;
+  top: 0;
+  border-bottom: 1px solid var(--primary-color);
+  border-radius: 0 5px 0 0;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  border-radius: 0 0 5px 0;
+}

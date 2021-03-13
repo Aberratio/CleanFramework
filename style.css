@@ -1,0 +1,86 @@
+/* ------ GENERAL ------ */
+:root {
+  --primary-color: rgb(65, 169, 120);
+  --secondary-color: rgb(85, 58, 32);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 18px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+}
+
+.btn-img {
+  width: 30px;
+  height: 30px;
+}
+
+.btn-img__small {
+  width: 13px;
+  height: 13px;
+  margin: auto;
+}
+
+.text {
+  margin-top: 30px;
+}
+
+/* ------ Tools ------ */
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Clearing Floats*/
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
