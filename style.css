@@ -75,6 +75,10 @@ body {
   justify-content: space-between;
 }
 
+.border-radius {
+  border-radius: 5%;
+}
+
 /*Clearing Floats*/
 .cf:before,
 .cf:after {

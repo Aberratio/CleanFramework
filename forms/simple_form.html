@@ -13,7 +13,7 @@
     <div class="container">
       <h1>Simple Form</h1>
       <form>
-        <div class="form-control">
+        <div class="form-control form-control--big">
           <input
             class="form-control__input input__border--down simple-input__input"
             type="name"
@@ -23,7 +23,7 @@
           />
           <label class="simple-input__label" for="name">Name</label>
         </div>
-        <div class="form-control">
+        <div class="form-control form-control--big">
           <input
             class="form-control__input input__border--down simple-input__input"
             type="email"
@@ -34,7 +34,7 @@
           <label class="simple-input__label" for="email">Email</label>
         </div>
 
-        <div class="form-control">
+        <div class="form-control form-control--big">
           <input
             class="form-control__input input__border--down simple-input__input"
             type="password"
@@ -45,7 +45,7 @@
           <label class="simple-input__label" for="password">Password</label>
         </div>
 
-        <div class="form-control">
+        <div class="form-control form-control--big">
           <input
             class="form-control__input input__border--all simple-input__input"
             type="name"
@@ -57,7 +57,7 @@
             >Name</label
           >
         </div>
-        <div class="form-control">
+        <div class="form-control form-control--big">
           <input
             class="form-control__input input__border--all simple-input__input"
             type="email"
@@ -70,7 +70,7 @@
           >
         </div>
 
-        <div class="form-control">
+        <div class="form-control form-control--big">
           <input
             class="form-control__input input__border--all simple-input__input"
             type="password"
@@ -82,6 +82,97 @@
             >Password</label
           >
         </div>
+
+        <div class="form-control form-control--medium">
+          <p class="input__simple-label">Wybierz sobie coś</p>
+          <div class="select-box">
+            <div class="options-container">
+              <div class="option">
+                <input type="radio" class="radio" id="id1" name="category" />
+                <label for="id1">id1</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio" id="id2" name="category" />
+                <label for="id2">id2</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio" id="id3" name="category" />
+                <label for="id3">id3</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio" id="id4" name="category" />
+                <label for="id4">id4</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio" id="id4" name="category" />
+                <label for="id4">id4</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio" id="id5" name="category" />
+                <label for="id5">id5</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio" id="id6" name="category" />
+                <label for="id6">id6</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio" id="id7" name="category" />
+                <label for="id7">id7</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio" id="id8" name="category" />
+                <label for="id8">id8</label>
+              </div>
+            </div>
+            <div class="selected input__border--all">Select ID</div>
+          </div>
+        </div>
+
+        <div class="form-control form-control--medium">
+          <p class="input__simple-label">Wybierz sobie coś</p>
+          <div class="select-box">
+            <div class="options-container">
+              <div class="option">
+                <input type="radio" class="radio" id="od1" name="category" />
+                <label for="od1">od1</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio" od="od2" name="category" />
+                <label for="od2">od2</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio" od="od3" name="category" />
+                <label for="od3">od3</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio" od="od4" name="category" />
+                <label for="od4">od4</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio" od="od4" name="category" />
+                <label for="od4">od4</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio" od="od5" name="category" />
+                <label for="od5">od5</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio" od="od6" name="category" />
+                <label for="od6">od6</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio" od="od7" name="category" />
+                <label for="od7">od7</label>
+              </div>
+              <div class="option">
+                <input type="radio" class="radio" od="od8" name="category" />
+                <label for="od8">od8</label>
+              </div>
+            </div>
+            <div class="selected input__border--all">Select OD</div>
+          </div>
+        </div>
+
         <div class="form-control space-between">
           <p class="primary-text form-control__description--left">Switch</p>
           <label class="switch">
@@ -96,7 +187,21 @@
           </label>
         </div>
 
-        <div class="form-control form-control_input-with-button cf">
+        <div class="form-control space-between">
+          <p class="primary-text form-control__description--left">Switch</p>
+          <label class="switch">
+            <input
+              class="form-control__input switch__input"
+              name="checkbox"
+              type="checkbox"
+              value="true"
+              type="checkbox"
+            />
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <div class="form-control form-control--medium cf">
           <input
             class="form-control__input input__border--all button-input__input simple-input__input"
             type="text"
@@ -126,11 +231,11 @@
           </button>
         </div>
 
-        <div class="form-control space-between">
+        <div class="form-control form-control--medium space-between">
           <p class="primary-text form-control__description--left">Number</p>
-          <div class="quantity-input form-control_border-all">
+          <div class="quantity-input">
             <input
-              class="form-control__input quantity-input__input"
+              class="form-control__input quantity-input__input input__border--all"
               type="number"
               min="1"
               max="9"
