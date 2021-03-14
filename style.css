@@ -19,7 +19,7 @@ body {
   margin: 0;
 }
 
-.btn {
+.button {
   cursor: pointer;
   display: inline-block;
   width: 100%;
@@ -30,29 +30,29 @@ body {
   border-radius: 5px;
 }
 
-.btn:focus {
+.button:focus {
   outline: 0;
 }
 
-.btn:active {
+.button:active {
   transform: scale(0.98);
 }
 
-.btn-primary {
+.button-primary {
   background-color: var(--primary-color);
   color: #fff;
 }
 
-.btn-secondary {
+.button-secondary {
   background-color: var(--secondary-color);
 }
 
-.btn-img {
+.button-img {
   width: 30px;
   height: 30px;
 }
 
-.btn-img__small {
+.button-img--small {
   width: 13px;
   height: 13px;
   margin: auto;
@@ -60,6 +60,12 @@ body {
 
 .text {
   margin-top: 30px;
+}
+
+.primary-text {
+  font-size: var(--font-label-size);
+  line-height: 2;
+  color: var(--primary-color);
 }
 
 /* ------ Tools ------ */

@@ -35,7 +35,7 @@
   }
 }
 
-.form-control input {
+.form-control__input {
   background-color: transparent;
   border: 0;
   display: block;
@@ -45,32 +45,30 @@
   padding-left: 2px;
 }
 
-.form-control p {
-  font-size: var(--font-label-size);
-  line-height: 2;
-  color: var(--primary-color);
+.form-control__description--left {
   padding-left: 2px;
+  float: left;
 }
 
-.form-control input:focus,
-.form-control input:valid,
-.form-control input:not(:placeholder-shown) {
+.form-control__input:focus,
+.form-control__input:valid,
+.form-control__input:not(:placeholder-shown) {
   outline: 0;
 }
 
 /* ------ Simple form control with single letter floating effect ------ */
 
-.form-control_simple-floating input:focus {
+.simple-input__input:focus {
   border-color: var(--primary-color);
 }
 
-.form-control_simple-floating label {
+.simple-input__label {
   position: absolute;
   top: 5px;
   left: 0;
 }
 
-.form-control_simple-floating label span {
+.simple-input__label span {
   display: inline-block;
   font-size: var(--font-label-size);
   min-width: 5px;
@@ -79,9 +77,9 @@
   color: var(--placeholder-color);
 }
 
-.form-control_simple-floating input:focus + label span,
-.form-control_simple-floating input:valid + label span,
-.form-control_simple-floating input:not(:placeholder-shown) + label span {
+.simple-input__input:focus + label span,
+.simple-input__input:valid + label span,
+.simple-input__input:not(:placeholder-shown) + label span {
   color: var(--primary-color);
   transform: translateY(-30px);
   line-height: 1;
@@ -89,18 +87,18 @@
 
 /* ------ Border styles for form controls ------ */
 
-.form-control_border-down input {
+.input__border--down {
   border-bottom: 1px var(--placeholder-color) solid;
 }
 
-.form-control_border-all input {
+.input__border--all {
   border: 1px var(--placeholder-color) solid;
   border-radius: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-.form-control_border-all label {
+.input__label-space {
   padding-left: 3px;
   padding-top: 5px;
 }
@@ -117,7 +115,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.switch input {
+.switch__input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -171,7 +169,7 @@ input:checked + .slider:before {
 
 /* ------ Input with button ------ */
 
-.form-control_input-with-button input {
+.button-input__input {
   width: 80%;
   height: 38px;
   padding: 10px 5px;
@@ -179,7 +177,7 @@ input:checked + .slider:before {
   border-radius: 5px 0 0 5px;
 }
 
-.form-control_input-with-button button {
+.button-input__button {
   overflow: visible;
   position: relative;
   float: right;
@@ -193,17 +191,17 @@ input:checked + .slider:before {
   border-radius: 0 5px 5px 0;
 }
 
-.form-control_input-with-button button:hover {
+.button-input__button:hover {
   background: var(--primary-color);
 }
 
-.form-control_input-with-button button:active,
-.form-control_input-with-button button:focus {
+.button-input__button:active,
+.button-input__button:focus {
   background: var(--primary-color);
   outline: 0;
 }
 
-.form-control_input-with-button button:before {
+.button-input__button:before {
   /* left arrow */
   content: "";
   position: absolute;
@@ -214,16 +212,16 @@ input:checked + .slider:before {
   left: -6px;
 }
 
-.form-control_input-with-button button:hover:before {
+.button-input__button:hover:before {
   border-right-color: var(--primary-color);
 }
 
-.form-control_input-with-button button:focus:before,
-.form-control_input-with-button button:active:before {
+.button-input__button:focus:before,
+.button-input__button:active:before {
   border-right-color: var(--primary-color);
 }
 
-.form-control_input-with-button button::-moz-focus-inner {
+.button-input__button::-moz-focus-inner {
   /* remove extra button spacing for Mozilla Firefox */
   border: 0;
   padding: 0;
@@ -231,7 +229,7 @@ input:checked + .slider:before {
 
 /* ------ Input number ------ */
 
-.quantity {
+.quantity-input {
   position: relative;
   margin: auto 0;
 }
@@ -246,7 +244,7 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.quantity input {
+.quantity-input__input {
   float: left;
   padding: 0;
   margin: 0;
@@ -256,18 +254,18 @@ input[type="number"] {
   font-size: var(--font-label-size);
 }
 
-.quantity input:focus {
+.quantity-input__input:focus {
   outline: 0;
   border-color: var(--primary-color);
 }
 
-.quantity-nav {
+.quantity-input__button-container {
   float: left;
   position: relative;
   height: 38px;
 }
 
-.quantity-button {
+.quantity-input__button {
   position: relative;
   cursor: pointer;
   border: none;
@@ -286,11 +284,11 @@ input[type="number"] {
   user-select: none;
 }
 
-.quantity-button:active {
+.quantity-input__button:active {
   background: var(--primary-color);
 }
 
-.quantity-button.quantity-up {
+.quantity-input__button.quantity-input__button-up {
   position: absolute;
   height: 50%;
   top: 0;
@@ -298,7 +296,7 @@ input[type="number"] {
   border-radius: 0 5px 0 0;
 }
 
-.quantity-button.quantity-down {
+.quantity-input__button.quantity-input__button-down {
   position: absolute;
   bottom: 0;
   height: 50%;
