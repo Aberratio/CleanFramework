@@ -28,18 +28,18 @@
   width: 300px;
 }
 
+@media (max-width: 450px) {
+  .form-control {
+    width: 250px;
+  }
+}
+
 .form-control--big {
   margin: 20px 0 40px;
 }
 
 .form-control--medium {
   margin: 20px 0 20px;
-}
-
-@media (max-width: 450px) {
-  .form-control {
-    width: 250px;
-  }
 }
 
 .form-control__input {

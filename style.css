@@ -19,6 +19,8 @@ body {
   margin: 0;
 }
 
+/* ------ Buttons ------ */
+
 .button {
   cursor: pointer;
   display: inline-block;
@@ -58,11 +60,13 @@ body {
   margin: auto;
 }
 
+/* ------ Text ------ */
+
 .text {
   margin-top: 30px;
 }
 
-.primary-text {
+.text-primary {
   font-size: var(--font-label-size);
   line-height: 2;
   color: var(--primary-color);

@@ -68,7 +68,8 @@ selectedAll.forEach((selected) => {
 
   optionsList.forEach((o) => {
     o.addEventListener("click", () => {
-      selected.innerHTML = o.querySelector("label").innerHTML;
+      const selectedValue = o.querySelector("label").innerHTML;
+      selected.innerHTML = '<input type="text" value="' + selectedValue + '" hidden />' + selectedValue;
       optionsContainer.classList.remove("active");
     });
   });
