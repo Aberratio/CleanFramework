@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <style>
+        body {
+        background-color: lightskyblue;
+        font-family: Arial;
+        }
+        #widok {
+            display: flex;
+            height: 100vh;
+        }
+        .formularz {
+            background-color: gray;
+            margin: auto;
+            width: 500px;
+            height: 300px;
+            border: 2px solid black;
+            }
+        #teza {
+            margin-top: 20px;
+            padding-top: 0px;
+            text-align: center;
+        }
+        #uzytkownik {
+            margin-top: 30px;
+            margin-left: 50px;
+            margin-right: 50px;
+            }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        button {
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            height: 30px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section id="widok">
+    <div class="formularz">
+        <p id="teza">Podaj dane użytkownika:</p>
+        <div id="uzytkownik">
+            <label> Imię i nazwisko: <input type="text"></label>
+            <label> numer telefonu: <input type="tel"></label>
+            <label> adres email: <input type="email"></label>
+            <label> nazwa użytkownika: <input type="text"></label>
+            <label> hasło: <input type="password"></label>
+            <label> powtórz hasło: <input type="password"></label>
+            <button>Rejestracja</button>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
