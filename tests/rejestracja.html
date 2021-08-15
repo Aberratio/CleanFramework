@@ -18,13 +18,14 @@
             background-color: gray;
             margin: auto;
             width: 500px;
-            height: 300px;
+            height: 380px;
             border: 2px solid black;
             }
-        #teza {
+        #polecenie {
             margin-top: 20px;
             padding-top: 0px;
             text-align: center;
+            font-weight: bold;
         }
         #uzytkownik {
             margin-top: 30px;
@@ -32,30 +33,78 @@
             margin-right: 50px;
             }
         label {
-            display: block;
-            margin-bottom: 5px;
+            display: inline-block;
+            margin-bottom: 10px;
         }
+        #name,#tel,#email,#user,#password,#password2 {
+            position: relative;
+            float: right;
+            margin-right: 70px;
+        }
+        select {
+            width: 167px;
+            height: 21.5px;
+        }
+        #user_type {
+            position: relative;
+            float: right;
+            margin-right: 70px;
+        }
+        #regulamin {
+            /* position: relative; */
+            /* float: left; */
+            /* margin-right: 10px; */
+            /* vertical-align: middle; */
+            /* position: relative; */
+            /* bottom: 1px; */
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+            /* align-items: center; */
+            /* vertical-align: middle; */
+            }
         button {
             margin-top: 20px;
             margin-left: auto;
             margin-right: auto;
             display: block;
-            height: 30px;
-            width: 100px;
+            height: 40px;
+            width: 120px;
         }
     </style>
 </head>
 <body>
     <section id="widok">
     <div class="formularz">
-        <p id="teza">Podaj dane użytkownika:</p>
+        <p id="polecenie">Podaj dane użytkownika:</p>
         <div id="uzytkownik">
-            <label> Imię i nazwisko: <input type="text"></label>
-            <label> numer telefonu: <input type="tel"></label>
-            <label> adres email: <input type="email"></label>
-            <label> nazwa użytkownika: <input type="text"></label>
-            <label> hasło: <input type="password"></label>
-            <label> powtórz hasło: <input type="password"></label>
+            <label for="name"> Imię i nazwisko: </label>
+            <input type="text" id="name" placeholder="Jan Kowalski">
+            <br>
+            <label for="tel"> numer telefonu: </label>
+            <input type="tel" id="tel" placeholder="+48600123123">
+            <br>
+            <label for="email"> adres email: </label>
+            <input type="email" id="email" placeholder="jan@domena.pl">
+            <br>
+            <label for="user"> nazwa użytkownika: </label> 
+            <input type="text" id="user" placeholder="janek12">
+            <br>
+            <label for="password"> hasło: </label> 
+            <input type="password" id="password" placeholder="***** ***">
+            <br>
+            <label for="password2"> powtórz hasło: </label> 
+            <input type="password" id="password2" placeholder="***** ***">
+            <br>
+            <label for="user_type">rodzaj użytkownika:</label>
+            <select id="user_type">
+                <option value="driver">Kierowca</option>
+                <option value="passanger">Pasażer</option>
+            </select>
+            <div id="regulamin">
+            <input type="checkbox" id="zgoda">
+            <label for="zgoda"> Akceptuję <a href="#">regulamin</a> </label>
+            </div>
             <button>Rejestracja</button>
         </div>
     </div>
