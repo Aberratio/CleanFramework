@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <style>
+        body {
+        background-color: lightskyblue;
+        font-family: Arial;
+        }
+        #widok {
+            display: flex;
+            height: 100vh;
+        }
+        .formularz {
+            background-color: gray;
+            margin: auto;
+            width: 500px;
+            height: 380px;
+            border: 2px solid black;
+            }
+        #polecenie {
+            margin-top: 20px;
+            padding-top: 0px;
+            text-align: center;
+            font-weight: bold;
+        }
+        #uzytkownik {
+            margin-top: 30px;
+            margin-left: 50px;
+            margin-right: 50px;
+            }
+        label {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        #name,#tel,#email,#user,#password,#password2 {
+            position: relative;
+            float: right;
+            margin-right: 70px;
+        }
+        select {
+            width: 167px;
+            height: 21.5px;
+        }
+        #user_type {
+            position: relative;
+            float: right;
+            margin-right: 70px;
+        }
+        #regulamin {
+            /* position: relative; */
+            /* float: left; */
+            /* margin-right: 10px; */
+            /* vertical-align: middle; */
+            /* position: relative; */
+            /* bottom: 1px; */
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+            /* align-items: center; */
+            /* vertical-align: middle; */
+            }
+        button {
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            height: 40px;
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <section id="widok">
+    <div class="formularz">
+        <p id="polecenie">Podaj dane użytkownika:</p>
+        <div id="uzytkownik">
+            <label for="name"> Imię i nazwisko: </label>
+            <input type="text" id="name" placeholder="Jan Kowalski">
+            <!-- <br> -->
+            <label for="tel"> numer telefonu: </label>
+            <input type="tel" id="tel" placeholder="+48600123123">
+            <!-- <br> -->
+            <label for="email"> adres email: </label>
+            <input type="email" id="email" placeholder="jan@domena.pl">
+            <!-- <br> -->
+            <label for="user"> nazwa użytkownika: </label> 
+            <input type="text" id="user" placeholder="janek12">
+            <!-- <br> -->
+            <label for="password"> hasło: </label> 
+            <input type="password" id="password" placeholder="***** ***">
+            <!-- <br> -->
+            <label for="password2"> powtórz hasło: </label> 
+            <input type="password" id="password2" placeholder="***** ***">
+            <!-- <br> -->
+            <label for="user_type">rodzaj użytkownika:</label>
+            <select id="user_type">
+                <option value="driver">Kierowca</option>
+                <option value="passanger">Pasażer</option>
+            </select>
+            <div id="regulamin">
+            <input type="checkbox" id="zgoda">
+            <label for="zgoda"> Akceptuję <a href="#">regulamin</a> </label>
+            </div>
+            <button>Rejestracja</button>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
