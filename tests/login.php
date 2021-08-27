@@ -21,6 +21,7 @@ if ($db_connection->connect_errno != 0) {
     if ($user_with_credentials) {
         $_SESSION['id'] = $user_with_credentials['id'];
         $_SESSION['login'] = $user_with_credentials['login'];
+        $_SESSION['is_logged'] = true;
 
         header('Location: menu.php');
     } else {

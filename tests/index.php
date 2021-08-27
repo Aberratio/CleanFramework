@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -53,7 +57,8 @@
     <section id="widok">
         <div class="formularz">
             <p id="polecenie">Nie jesteś zalogowany</p>
-            <a id="powrot" href="rejestracja2.php">Powrót</a>
+            <p id="polecenie">Tutaj będzie superfajna strona domowa.</p>
+            <a id="powrot" href="logowanie.php">Do strony logowania</a>
         </div>
     </section>
 </body>

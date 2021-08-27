@@ -1,5 +1,9 @@
 <?php
 session_start();
+if (!isset($_SESSION['is_logged'])) {
+    header('Location: index.php');
+    exit();
+}
 ?>
 
 <!DOCTYPE html>
@@ -62,6 +66,8 @@ session_start();
                 echo $_SESSION['login'];
                 ?>
             </p>
+
+            <a class="text-decoration-none" href="logout.php">Wyloguj</a>
             <a id="powrot" href="logowanie.php">Powrót</a>
         </div>
     </section>

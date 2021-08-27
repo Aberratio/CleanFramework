@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -18,25 +22,21 @@
             <h1>Rejestracja</h1>
             <form>
                 <div class="form-control form-control--big">
-                    <input class="form-control__input input__border--all simple-input__input" type="login"
-                        placeholder=" " required id="login" />
+                    <input class="form-control__input input__border--all simple-input__input" type="login" placeholder=" " required id="login" />
                     <label class="simple-input__label input__label-space" for="name2">Login</label>
                 </div>
                 <div class="form-control form-control--big">
-                    <input class="form-control__input input__border--all simple-input__input" type="email"
-                        placeholder=" " required id="email" />
+                    <input class="form-control__input input__border--all simple-input__input" type="email" placeholder=" " required id="email" />
                     <label class="simple-input__label input__label-space" for="email2">Email</label>
                 </div>
 
                 <div class="form-control form-control--big">
-                    <input class="form-control__input input__border--all simple-input__input" type="password"
-                        placeholder=" " required id="password" />
+                    <input class="form-control__input input__border--all simple-input__input" type="password" placeholder=" " required id="password" />
                     <label class="simple-input__label input__label-space" for="password">Hasło</label>
                 </div>
 
                 <div class="form-control form-control--big">
-                    <input class="form-control__input input__border--all simple-input__input" type="password"
-                        placeholder=" " required id="password2" />
+                    <input class="form-control__input input__border--all simple-input__input" type="password" placeholder=" " required id="password2" />
                     <label class="simple-input__label input__label-space" for="password">Powtórz hasło</label>
                 </div>
                 <button class="button button-primary">Zarejestruj</button>
