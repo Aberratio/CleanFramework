@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,15 @@
     <title>Logowanie</title>
     <style>
         body {
-        background-color: lightskyblue;
-        font-family: Arial;
+            background-color: lightskyblue;
+            font-family: Arial;
         }
+
         #widok {
             display: flex;
             height: 100vh;
         }
+
         .formularz {
             background-color: gray;
             margin: auto;
@@ -22,7 +25,8 @@
             border: 2px solid black;
             align-content: center;
             vertical-align: middle;
-            }
+        }
+
         #polecenie {
             margin-top: auto;
             margin-bottom: auto;
@@ -30,25 +34,28 @@
             text-align: center;
             font-weight: bold;
         }
+
         #powrot {
-        padding-top: 150px;
-        padding-bottom: 50px;
-        margin: 0 auto;
-        font-size: 100%;
-        text-align: center;
-        /* align-self: center; */
-        text-decoration: none;
-        display: block;	
-        vertical-align: middle;
+            padding-top: 150px;
+            padding-bottom: 50px;
+            margin: 0 auto;
+            font-size: 100%;
+            text-align: center;
+            /* align-self: center; */
+            text-decoration: none;
+            display: block;
+            vertical-align: middle;
         }
     </style>
 </head>
+
 <body>
     <section id="widok">
-    <div class="formularz">
-        <p id="polecenie">Jesteś zalogowany</p>
-        <a id="powrot" href="rejestracja.html">Powrót</a>
-    </div>
+        <div class="formularz">
+            <p id="polecenie">Jesteś zalogowany</p>
+            <a id="powrot" href="rejestracja2.html">Powrót</a>
+        </div>
     </section>
 </body>
+
 </html>
