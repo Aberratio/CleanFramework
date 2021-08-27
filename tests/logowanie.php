@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +32,7 @@ session_start();
         </div>
         <button class="button button-primary" type="submit">Logowanie</button>
       </form>
-      <p class="text">Nie mam konta :( <a href="rejstracja2.html">Zarejestruj</a></p>
+      <p class="text">Nie mam konta 😥 <a href="rejestracja2.php">Zarejestruj</a></p>
     </div>
   </section>
   <script src="../forms/script.js"></script>

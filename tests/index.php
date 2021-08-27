@@ -53,7 +53,7 @@
     <section id="widok">
         <div class="formularz">
             <p id="polecenie">Nie jesteś zalogowany</p>
-            <a id="powrot" href="rejestracja2.html">Powrót</a>
+            <a id="powrot" href="rejestracja2.php">Powrót</a>
         </div>
     </section>
 </body>

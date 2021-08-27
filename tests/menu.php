@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -5,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logowanie</title>
+    <title>Menu</title>
     <style>
         body {
             background-color: lightskyblue;
@@ -53,7 +57,12 @@
     <section id="widok">
         <div class="formularz">
             <p id="polecenie">Jesteś zalogowany</p>
-            <a id="powrot" href="rejestracja2.html">Powrót</a>
+            <p> Witaj
+                <?php
+                echo $_SESSION['login'];
+                ?>
+            </p>
+            <a id="powrot" href="logowanie.php">Powrót</a>
         </div>
     </section>
 </body>
