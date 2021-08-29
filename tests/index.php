@@ -10,45 +10,35 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logowanie</title>
+    <link rel="stylesheet" href="./test_style.css" />
     <style>
-        body {
-            background-color: lightskyblue;
-            font-family: Arial;
-        }
-
         #widok {
             display: flex;
             height: 100vh;
         }
 
         .formularz {
-            background-color: gray;
+            background-color: white;
             margin: auto;
-            width: 500px;
-            height: 380px;
-            border: 2px solid black;
+            width: 400px;
+            min-height: 300px;
+            border: none;
+            border-radius: 5%;
             align-content: center;
             vertical-align: middle;
         }
 
-        #polecenie {
+        .polecenie {
             margin-top: auto;
             margin-bottom: auto;
-            padding-top: 100px;
+            padding-top: 50px;
             text-align: center;
             font-weight: bold;
         }
 
         #powrot {
-            padding-top: 150px;
-            padding-bottom: 50px;
-            margin: 0 auto;
-            font-size: 100%;
-            text-align: center;
-            /* align-self: center; */
-            text-decoration: none;
             display: block;
-            vertical-align: middle;
+            padding-bottom: 50px;
         }
     </style>
 </head>
@@ -56,9 +46,9 @@ session_start();
 <body>
     <section id="widok">
         <div class="formularz">
-            <p id="polecenie">Nie jesteś zalogowany</p>
-            <p id="polecenie">Tutaj będzie superfajna strona domowa.</p>
-            <a id="powrot" href="logowanie.php">Do strony logowania</a>
+            <p class="polecenie">Błędny login lub hasło.</p>
+            <p class="polecenie">Jesteś nieudolnym hackerem! 🙄😛</p>
+            <a class="polecenie" id="powrot" href="logowanie.php">Wróć do strony logowania</a>
         </div>
     </section>
 </body>
