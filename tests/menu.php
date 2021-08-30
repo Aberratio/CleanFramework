@@ -67,7 +67,7 @@ if (!isset($_SESSION['is_logged'])) {
                 ?>
             </p>
 
-            <a class="text-decoration-none" href="logout.php">Wyloguj</a>
+            <a class="text-decoration-none" href="./scripts/logout.php">Wyloguj</a>
             <a id="powrot" href="logowanie.php">Powrót</a>
         </div>
     </section>

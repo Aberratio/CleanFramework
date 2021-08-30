@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "../configuration/connect.php";
+require_once "../../configuration/connect.php";
 global $con;
 
 $db_connection = @new mysqli($host, $db_user, $db_password, $db_name);
