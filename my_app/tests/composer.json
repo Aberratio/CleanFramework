@@ -1,0 +1,12 @@
+{
+    "name": "test/test",
+    "description": "The Leszek Test Framework.",
+    "autoload": {
+        "classmap": [
+        ]
+    },
+    "scripts": {
+        "post-update-cmd": [
+        ]
+    }
+}
