@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="pl">
+#test pozytywny - dobry użytkownik i dobre hasło
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logowanie</title>
-</head>
+#test negatywny - dobry użytkownik, brak hasła
+#test negatywny - dobry użytkownik, złe hasło (niewystepujace w BD)
+#test negatywny - dobry użytkownik, złe hasło (występujące w BD, przy innym uzytkowniku)
 
-<body>
-
-</body>
-
-</html>
+#test negatywny - zla nazwa uzytkownika (nie wystepuje w BD)
+#test negatywny - zla nazwa uzytkownika (wystepuje w BD, nadmiarowe znaki specjalne)
+#test negatywny - zla nazwa uzytkownika (wystepuje w BD, inna wielkość liter)
+#test negatywny - zla nazwa uzytkownika (wystepuje w BD, dodatkowy znak specjalny na końcu nazwy)
+#test negatywny - zla nazwa uzytkownika (wystepuje w BD, dodatkowy znak specjalny na początku nazwy)
+#test negatywny - zla nazwa uzytkownika (wystepuje w BD, dodatkowa liczba na końcu nazwy)
+#test negatywny - zla nazwa uzytkownika (wystepuje w BD, dodatkowa liczba na początku nazwy)
