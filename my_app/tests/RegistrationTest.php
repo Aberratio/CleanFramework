@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="pl">
+#test pozytywny - wszystkie dane prawidłowe
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rejestracja</title>
-</head>
+#test negatywny - brak loginu, raszta danych poprawna
+#test negatywny - brak maila, raszta danych poprawna
+#test negatywny - brak hasła, raszta danych poprawna
+#test negatywny - brak powtórzonego hasła, raszta danych poprawna
 
-<body>
-
-</body>
-
-</html>
+#test negatywny - zły login (istnieje w bazie), raszta danych poprawna
+#test negatywny - zły email (istnieje w bazie), raszta danych poprawna
+#test negatywny - zły email (nieprawidłowy format), raszta danych poprawna
+#test negatywny - złe hasło (zbyt krótkie), raszta danych poprawna
+#test negatywny - złe hasło (zbyt długie), raszta danych poprawna
+#test negatywny - hasła nie są jednakowe, raszta danych poprawna
