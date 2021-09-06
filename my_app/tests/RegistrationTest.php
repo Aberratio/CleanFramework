@@ -1,5 +1,10 @@
 #test pozytywny - wszystkie dane prawidłowe
 
+#test brzegowy - wszystkie dane prawidłowe, login ma minimalną liczbę znaków
+#test brzegowy - wszystkie dane prawidłowe, login ma maksymalną liczbę znaków
+#test brzegowy - wszystkie dane prawidłowe, hasło ma maksymalną liczbę znaków
+#test brzegowy - wszystkie dane prawidłowe, hasło ma maksymalną liczbę znaków
+
 #test negatywny - brak loginu, raszta danych poprawna
 #test negatywny - brak maila, raszta danych poprawna
 #test negatywny - brak hasła, raszta danych poprawna
