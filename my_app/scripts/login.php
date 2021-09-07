@@ -23,9 +23,9 @@ if ($db_connection->connect_errno != 0) {
         $_SESSION['login'] = $user_with_credentials['login'];
         $_SESSION['is_logged'] = true;
 
-        header('Location: menu.php');
+        header('Location: ../menu.php');
     } else {
-        header('Location: index.php');
+        header('Location: ../index.php');
     }
 
     $db_connection->close();
