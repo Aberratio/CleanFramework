@@ -23,7 +23,7 @@ if (!isset($_SESSION['is_logged'])) {
 <body>
     <section id="widok">
         <div class="container">
-            <h1>Jesteś zalogowany</h1>
+            <h1>Lista zadań</h1>
             <div>
                 <a class="text-decoration-none" href="./scripts/logout.php">Wyloguj</a>
                 <p> Witaj
