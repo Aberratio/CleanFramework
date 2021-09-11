@@ -34,16 +34,19 @@ if (!isset($_SESSION['is_logged'])) {
                 <p>
                     <?php
                     echo "Przycisk z wyskakującycym popupem - dodaj nowe zadanie.";
+                    echo "Popup: nazwa zadania / kategoria / termin (od - do) / zapisz";
                     ?>
                 </p>
                 <p>
                     <?php
                     echo "Widok todo listy na dzisiaj";
+                    echo "Usuwanie i edycja";
                     ?>
                 </p>
                 <p>
                     <?php
                     echo "Widok todo listy na następny tydzień";
+                    echo "Usuwanie i edycja";
                     ?>
                 </p>
 
