@@ -31,6 +31,22 @@ if (!isset($_SESSION['is_logged'])) {
                     echo $_SESSION['login'];
                     ?>
                 </p>
+                <p>
+                    <?php
+                    echo "Przycisk z wyskakującycym popupem - dodaj nowe zadanie.";
+                    ?>
+                </p>
+                <p>
+                    <?php
+                    echo "Widok todo listy na dzisiaj";
+                    ?>
+                </p>
+                <p>
+                    <?php
+                    echo "Widok todo listy na następny tydzień";
+                    ?>
+                </p>
+
             </div>
         </div>
     </section>
