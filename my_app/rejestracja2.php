@@ -22,7 +22,7 @@ session_start();
             <h1>Rejestracja</h1>
             <form action="./scripts/registration.php" method="post">
                 <div class="form-control form-control--big">
-                    <input class="form-control__input input__border--all simple-input__input" type="login" placeholder=" " required id="login" name="login" />
+                    <input class="form-control__input input__border--all simple-input__input" type="text" placeholder=" " required id="login" name="login" />
                     <label class="simple-input__label input__label-space" for="login">Login</label>
                 </div>
                 <div class="form-control form-control--big">

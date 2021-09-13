@@ -23,7 +23,7 @@ session_start();
       <h1>Logowanie</h1>
       <form action="./scripts/login.php" method="post">
         <div class="form-control form-control--big">
-          <input class="form-control__input input__border--all simple-input__input" type="login" name="login" placeholder=" " required id="login" />
+          <input class="form-control__input input__border--all simple-input__input" type="text" name="login" placeholder=" " required id="login" />
           <label class="simple-input__label input__label-space" for="login">Login</label>
         </div>
         <div class="form-control form-control--big">

@@ -46,9 +46,21 @@ if (!isset($_SESSION['is_logged'])) {
                     <div class="modal-content">
                         <span class="close">&times;</span>
                         <p>Panel dodawania nowego zadania</p>
-                        <p>Nazwa nowego zadania</p>
-                        <p>Kategoria nowego zadania</p>
-                        <p>Termin nowego zadania</p>
+                        <form action="./scripts/login.php" method="post">
+                            <div class="form-control form-control--big">
+                                <input class="form-control__input input__border--all simple-input__input" type="text" name="login" placeholder=" " required id="login" />
+                                <label class="simple-input__label input__label-space" for="login">Nazwa nowego zadania</label>
+                            </div>
+                            <div class="form-control form-control--big">
+                                <input class="form-control__input input__border--all simple-input__input" type="text" name="login" placeholder=" " required id="login" />
+                                <label class="simple-input__label input__label-space" for="login">Kategoria nowego zadania</label>
+                            </div>
+                            <div class="form-control form-control--big">
+                                <input class="form-control__input input__border--all simple-input__input" type="text" name="login" placeholder=" " required id="login" />
+                                <label class="simple-input__label input__label-space" for="login">Termin nowego zadania</label>
+                            </div>
+                            <button class="button button-primary" type="submit">Logowanie</button>
+                        </form>
                     </div>
 
                 </div>
