@@ -48,18 +48,18 @@ if (!isset($_SESSION['is_logged'])) {
                         <p>Panel dodawania nowego zadania</p>
                         <form action="./scripts/login.php" method="post">
                             <div class="form-control form-control--big">
-                                <input class="form-control__input input__border--all simple-input__input" type="text" name="login" placeholder=" " required id="login" />
-                                <label class="simple-input__label input__label-space" for="login">Nazwa nowego zadania</label>
+                                <input class="form-control__input input__border--all simple-input__input" type="text" name="task_name" placeholder=" " required id="task_name" />
+                                <label class="simple-input__label input__label-space" for="task_name">Nazwa nowego zadania</label>
                             </div>
                             <div class="form-control form-control--big">
-                                <input class="form-control__input input__border--all simple-input__input" type="text" name="login" placeholder=" " required id="login" />
-                                <label class="simple-input__label input__label-space" for="login">Kategoria nowego zadania</label>
+                                <input class="form-control__input input__border--all simple-input__input" type="text" name="task_category" placeholder=" " required id="task_category" />
+                                <label class="simple-input__label input__label-space" for="task_category">Kategoria nowego zadania</label>
                             </div>
                             <div class="form-control form-control--big">
-                                <input class="form-control__input input__border--all simple-input__input" type="text" name="login" placeholder=" " required id="login" />
-                                <label class="simple-input__label input__label-space" for="login">Termin nowego zadania</label>
+                                <input class="form-control__input input__border--all simple-input__input" type="text" name="task_time" placeholder=" " required id="task_time" />
+                                <label class="simple-input__label input__label-space" for="task_time">Termin nowego zadania</label>
                             </div>
-                            <button class="button button-primary" type="submit">Logowanie</button>
+                            <button class="button button-primary" type="submit">Dodaj zadanie</button>
                         </form>
                     </div>
 
