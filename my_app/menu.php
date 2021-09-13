@@ -46,6 +46,9 @@ if (!isset($_SESSION['is_logged'])) {
                     <div class="modal-content">
                         <span class="close">&times;</span>
                         <p>Panel dodawania nowego zadania</p>
+                        <p>Nazwa nowego zadania</p>
+                        <p>Kategoria nowego zadania</p>
+                        <p>Termin nowego zadania</p>
                     </div>
 
                 </div>
