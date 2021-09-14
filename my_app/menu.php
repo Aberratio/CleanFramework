@@ -124,6 +124,7 @@ if (!isset($_SESSION['is_logged'])) {
         }
         // ========= MODAL END =========
     </script>
+    <script src="../forms/script.js"></script>
 </body>
 
 </html>
