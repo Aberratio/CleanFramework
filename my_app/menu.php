@@ -16,7 +16,7 @@ if (!isset($_SESSION['is_logged'])) {
     <title>Menu</title>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../forms/form_style.css" />
-    <link rel="stylesheet" href="./test_style.css" />
+    <link rel="stylesheet" href="./test_style.css?v=1" />
     <script type="text/javascript" src="../ajaxjquery.min.js"></script>
 </head>
 
@@ -45,7 +45,7 @@ if (!isset($_SESSION['is_logged'])) {
                     <!-- Modal content -->
                     <div class="modal-content">
                         <span class="close">&times;</span>
-                        <p>Panel dodawania nowego zadania</p>
+                        <h2>Panel dodawania nowego zadania</h2>
                         <form action="./scripts/login.php" method="post">
                             <div class="form-control form-control--big">
                                 <input class="form-control__input input__border--all simple-input__input" type="text" name="task_name" placeholder=" " required id="task_name" />

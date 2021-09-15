@@ -95,12 +95,19 @@ body {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 5% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  border: 1px solid #fefefe;
+  border-radius: 3%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
+.modal-content h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
 /* The Close Button */
 .close {
   color: #aaa;
