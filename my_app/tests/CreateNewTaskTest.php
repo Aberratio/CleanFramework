@@ -1,0 +1,1 @@
+#test pozytywny - wybrana kategoria, wpisana nazwa, wpisany termin
