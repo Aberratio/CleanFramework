@@ -38,6 +38,7 @@ session_start();
 
         #powrot {
             display: block;
+            margin-top: 100px;
             padding-bottom: 50px;
         }
     </style>
@@ -47,7 +48,7 @@ session_start();
     <section id="widok">
         <div class="formularz">
             <p class="polecenie">Błędny login lub hasło.</p>
-            <p class="polecenie">Jesteś nieudolnym hackerem! 🙄😛</p>
+            <!-- <p class="polecenie">Jesteś nieudolnym hackerem! 🙄😛</p> -->
             <a class="polecenie" id="powrot" href="logowanie.php">Wróć do strony logowania</a>
         </div>
     </section>
