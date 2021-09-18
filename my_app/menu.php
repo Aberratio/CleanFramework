@@ -82,6 +82,19 @@ if (!isset($_SESSION['is_logged'])) {
                     echo "Usuwanie i edycja";
                     ?>
                 </p>
+                <p>
+                    <?php
+                    echo "Widok listy zakupów bieżących";
+                    echo "Usuwanie i edycja";
+                    ?>
+                </p>
+                <p>
+                    <?php
+                    echo "Widok listy zakupów większych, zaplanowanych, wymarzonych...";
+                    echo "Usuwanie i edycja";
+                    //ewentulanie można dać inną zakładkę na zakupy
+                    ?>
+                </p>
 
             </div>
         </div>
